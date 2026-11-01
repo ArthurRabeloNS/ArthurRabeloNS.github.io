@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Arthur Rabelo | Desenvolvedor e estudante de Ciência da Computação</title>
+<meta name="description" content="Portfólio de Arthur Rabelo, estudante de Ciência da Computação, desenvolvedor e entusiasta de segurança da informação. Aberto a estágio e posição inicial em TI.">
+<meta name="theme-color" content="#06050f">
+<meta name="color-scheme" content="dark light">
+<meta property="og:type" content="website"><meta property="og:locale" content="pt_BR">
+<meta property="og:title" content="Arthur Rabelo | Portfólio">
+<meta property="og:description" content="Estudante de Ciência da Computação, desenvolvedor e entusiasta de segurança da informação.">
+<meta property="og:image" content="https://arthurrabelons.github.io/assets/ogimage.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Arthur Rabelo, estudante de Ciência da Computação, aberto a estágio em TI">
+<meta property="og:url" content="https://arthurrabelons.github.io/">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://arthurrabelons.github.io/assets/ogimage.jpg">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%23d10f26'/%3E%3Ctext x='50' y='68' font-size='54' font-weight='700' text-anchor='middle' fill='white' font-family='sans-serif'%3EAR%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400..800&family=JetBrains+Mono:wght@500;600&display=swap">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Arthur Rabelo Nunes da Silva","alternateName":"Arthur Rabelo","jobTitle":"Estudante de Ciência da Computação","affiliation":{"@type":"CollegeOrUniversity","name":"UniFECAF"},"address":{"@type":"PostalAddress","addressLocality":"São Paulo","addressCountry":"BR"},"sameAs":["https://github.com/ArthurRabeloNS","https://www.linkedin.com/in/arthur-rabelo-95124a367/"]}</script>
+<script>(function(){var R=document.documentElement,t;R.className='js';try{t=localStorage.getItem('theme')}catch(e){}if(t==='light'||t==='dark')R.dataset.theme=t})();</script>
+<style>
+@property --t{syntax:"<number>";inherits:true;initial-value:0}
+:root{--t:0;color-scheme:dark;--bg:#06050f;--ink:#f5eef0;--mute:#b6a3a8;--hue:calc(-8 + var(--t)*154);--acc:hsl(var(--hue) 100% 62%);--fill:hsl(var(--hue) 86% calc(45% - var(--t)*20% - var(--t)*(1 - var(--t))*56%));--line:rgba(255,255,255,.12);--card:rgba(255,255,255,.045);--nav:rgba(6,5,15,.78);--r:14px;--f:"Schibsted Grotesk",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;--m:"JetBrains Mono",ui-monospace,"SF Mono",Consolas,monospace}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:84px}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1.0625rem/1.65 var(--f);-webkit-font-smoothing:antialiased}
+a{color:inherit}
+::selection{background:var(--fill);color:#fff}
+:focus-visible{outline:2px solid var(--acc);outline-offset:3px;border-radius:4px}
+.skip{position:absolute;left:12px;top:-64px;z-index:100;background:var(--fill);color:#fff;padding:10px 16px;border-radius:8px;text-decoration:none}.skip:focus{top:12px}
+.wrap{width:min(1120px,100% - 48px);margin-inline:auto}
+
+/* blocos: painel escuro com degradê que vai de vermelho a verde; no tema claro, painel branco com texto preto (o céu continua) */
+.blk{position:relative;padding:clamp(24px,4.5vw,52px);color:var(--ink);border:1px solid hsl(var(--hue) 70% 55% / .28);border-radius:22px;background:radial-gradient(640px 360px at 100% 0,hsl(var(--hue) 90% 48% / .27),transparent 70%),radial-gradient(520px 320px at 0 100%,hsl(var(--hue) 80% 38% / .16),transparent 70%),linear-gradient(160deg,rgba(26,13,24,.9),rgba(9,7,17,.92));box-shadow:0 24px 60px rgba(0,0,0,.35);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px)}
+.blk .glance,.blk .proj,.blk .cta{backdrop-filter:none;-webkit-backdrop-filter:none}
+.blk .cta{padding:0;border:0;border-radius:0;background:none}
+nav{color:var(--ink)}
+[data-theme=light] .blk,[data-theme=light] nav,[data-theme=light] dialog{--ink:#120a0c;--mute:#5a484d;--line:rgba(18,10,12,.14);--card:#f7f2f3;--bg:#fff;--nav:rgba(255,255,255,.92);--acc:hsl(var(--hue) 85% calc(38% - var(--t)*15% - var(--t)*(1 - var(--t))*40%));--fill:hsl(var(--hue) 80% calc(42% - var(--t)*17% - var(--t)*(1 - var(--t))*50%))}
+[data-theme=light] .blk{background:#fff;border-color:rgba(18,10,12,.12);box-shadow:0 24px 60px rgba(0,0,0,.3),inset 0 3px 0 var(--fill)}
+/* atmosfera espacial: base, nebulosas, Via Láctea, estrelas, planeta anelado e lua (canvas) */
+body::before{content:"";position:fixed;inset:0;z-index:0;pointer-events:none;background:radial-gradient(ellipse at 82% 4%,rgba(150,20,60,.2),transparent 45%),radial-gradient(ellipse at 6% 45%,rgba(60,50,160,.22),transparent 48%),linear-gradient(180deg,#03030b,#07061a 55%,#03030a)}
+#neb,#sky{position:fixed;inset:0;width:100%;height:100%;z-index:0;pointer-events:none}
+body::after{content:"";position:fixed;inset:0;z-index:0;pointer-events:none;background:radial-gradient(ellipse at 50% 50%,transparent 58%,rgba(0,0,6,.55))}
+header,main,footer{position:relative;z-index:1}
+#prog{position:fixed;top:0;left:0;height:2px;width:0;background:var(--acc);z-index:30}
+
+/* navegação */
+nav{position:sticky;top:0;z-index:20;background:var(--nav);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid var(--line);padding-top:env(safe-area-inset-top,0px)}
+.bar{display:flex;align-items:center;justify-content:space-between;height:64px;gap:16px}
+.logo{display:flex;align-items:center;gap:10px;font-weight:700;letter-spacing:-.01em;text-decoration:none}
+.logo i{display:grid;place-items:center;width:32px;height:32px;border-radius:9px;background:var(--fill);color:#fff;font:600 .8rem var(--m);font-style:normal}
+nav ul{display:flex;gap:4px;list-style:none;margin:0;padding:0}
+nav li a{display:block;padding:8px 14px;border-radius:99px;color:var(--mute);font-size:.95rem;text-decoration:none;transition:color .2s,background .2s}
+nav li a:hover{color:var(--ink)}nav li a.on{color:var(--ink);background:var(--line)}
+.tools{display:flex;gap:8px}
+.ib{width:40px;height:40px;border-radius:10px;border:1px solid var(--line);background:transparent;color:var(--ink);font-size:1.05rem;cursor:pointer;transition:border-color .2s}.ib:hover{border-color:var(--acc)}
+#menu{display:none;width:auto;padding:0 14px;font:600 .95rem var(--f)}
+
+/* hero */
+.hero{padding:clamp(20px,3.5vw,40px) 0 clamp(14px,2.2vw,22px)}
+.hero-grid{display:grid;grid-template-columns:minmax(0,1.55fr) minmax(0,1fr);gap:clamp(32px,6vw,80px);align-items:center}
+.hero-grid>*{animation:in .8s cubic-bezier(.2,.7,.2,1) both}.hero-grid>:nth-child(2){animation-delay:.12s}.hero-grid>:nth-child(3){animation-delay:.24s}
+@keyframes in{from{opacity:0;transform:translateY(14px)}}
+.status{display:inline-flex;align-items:center;gap:10px;padding:6px 14px;margin-bottom:28px;border:1px solid var(--line);border-radius:99px;background:var(--card);color:var(--mute);font-size:.92rem}
+.status::before{content:"";width:8px;height:8px;border-radius:50%;background:#3ddc84;box-shadow:0 0 0 4px rgba(61,220,132,.18)}
+h1{font:800 clamp(3.4rem,10.5vw,7.6rem)/.92 var(--f);letter-spacing:-.05em;margin:0 0 26px}
+h1 small{display:block;margin-bottom:16px;font:500 clamp(1rem,2vw,1.2rem)/1.2 var(--f);letter-spacing:0;color:var(--mute)}
+.role{font:600 clamp(1.15rem,2.3vw,1.5rem)/1.3 var(--f);letter-spacing:-.01em;max-width:30ch;margin:0 0 16px}
+.lead{max-width:54ch;margin:0;color:var(--mute);font-size:1.125rem}
+.btns{display:flex;flex-wrap:wrap;gap:12px;margin-top:32px}
+.btn{display:inline-flex;align-items:center;padding:13px 24px;border:1px solid var(--line);border-radius:12px;background:transparent;color:var(--ink);font:600 1rem var(--f);text-decoration:none;cursor:pointer;transition:border-color .2s,background .2s,transform .2s}
+.btn:hover{border-color:var(--acc)}
+.btn.p{background:var(--fill);border-color:var(--fill);color:#fff}.btn.p:hover{filter:brightness(1.12);transform:translateY(-1px)}
+.id{justify-self:end;width:100%;max-width:340px}
+.photo{position:relative;aspect-ratio:4/5;overflow:hidden;border:1px solid var(--line);border-radius:20px;background:linear-gradient(160deg,#2a1219,#0e070b)}
+[data-theme=light] .photo{background:linear-gradient(160deg,#f3d9de,#fff)}
+.photo span{position:absolute;inset:0;display:grid;place-items:center;font:800 6rem var(--f);letter-spacing:-.06em;color:var(--acc);opacity:.5}
+.photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.cap{display:flex;justify-content:space-between;gap:12px;margin:14px 4px 0;color:var(--mute);font-size:.92rem}
+.glance{grid-column:1/-1;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));margin:clamp(24px,4vw,48px) 0 0;border:1px solid var(--line);border-radius:var(--r);background:var(--card);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px)}
+.glance div{padding:20px 22px;border-left:1px solid var(--line)}.glance div:first-child{border:0}
+.glance dt{margin-bottom:4px;color:var(--mute);font-size:.88rem}.glance dd{margin:0;font-weight:600;line-height:1.35}
+
+/* seções */
+section{padding:clamp(14px,2.2vw,22px) 0}
+h2{font:700 clamp(1.9rem,4vw,2.9rem)/1.08 var(--f);letter-spacing:-.03em;margin:0 0 clamp(28px,4vw,48px)}
+.tags{display:flex;flex-wrap:wrap;gap:8px;list-style:none;margin:0;padding:0}
+.tags li{padding:3px 12px;border:1px solid var(--line);border-radius:99px;font-size:.85rem}
+.about{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(0,1fr);gap:clamp(28px,5vw,72px)}
+.about p{max-width:62ch;margin:0 0 1.1em}
+.about h3{margin:0 0 12px;font:600 1rem var(--f)}.about h3:not(:first-child){margin-top:32px}
+
+/* projetos */
+.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.proj{display:flex;flex-direction:column;padding:28px;border:1px solid var(--line);border-radius:var(--r);background:var(--card);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);transition:border-color .25s}
+.proj:hover{border-color:color-mix(in srgb,var(--acc) 55%,var(--line))}
+.proj.big{grid-column:1/-1}
+.meta{margin-bottom:14px;color:var(--acc);font-size:.9rem;font-weight:600}
+.proj h3{margin:0 0 10px;font:700 1.4rem/1.2 var(--f);letter-spacing:-.02em}
+.proj p{flex:1;max-width:70ch;margin:0 0 20px;color:var(--mute)}
+.proj .tags{margin-bottom:22px}
+.go{align-self:flex-start;border-bottom:1px solid transparent;color:var(--acc);font-weight:600;text-decoration:none}.go:hover{border-color:currentColor}
+.more{margin:28px 0 0;color:var(--mute)}.more a{color:var(--acc);font-weight:600}
+
+/* tecnologias */
+.rows{margin:0;border-top:1px solid var(--line)}
+.rows div{display:grid;grid-template-columns:minmax(150px,1fr) 3fr;gap:8px 32px;padding:18px 0;border-bottom:1px solid var(--line)}
+.rows dt{font-weight:600}.rows dd{margin:0;color:var(--mute)}
+
+/* trajetória */
+.grp{margin:0 0 18px;color:var(--acc);font:600 .95rem var(--f)}
+.tl{list-style:none;margin:0 0 44px;padding:0 0 0 24px;border-left:1px solid var(--line)}.tl:last-child{margin:0}
+.tl li{position:relative;padding-bottom:26px}.tl li:last-child{padding-bottom:0}
+.tl li::before{content:"";position:absolute;left:-29px;top:.5em;width:9px;height:9px;border-radius:50%;background:var(--acc)}
+.tl time{color:var(--mute);font:500 .82rem var(--m)}
+.tl h4{margin:2px 0 4px;font:600 1.12rem/1.35 var(--f)}.tl p{max-width:62ch;margin:0;color:var(--mute)}
+
+/* contato e rodapé */
+.cta{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);gap:clamp(28px,5vw,64px);align-items:center;padding:clamp(28px,5vw,56px);border:1px solid color-mix(in srgb,var(--acc) 32%,var(--line));border-radius:22px;background:radial-gradient(480px 280px at 100% 0,rgba(211,17,45,.24),transparent),var(--card);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px)}
+.ch{margin:0;border:1px solid var(--line);border-radius:var(--r);background:var(--card)}
+.ch div{padding:16px 20px;border-top:1px solid var(--line)}.ch div:first-child{border:0}
+.ch dt{color:var(--mute);font-size:.85rem}.ch dd{margin:2px 0 0;font-weight:600;overflow-wrap:anywhere}
+.ch a{text-decoration:none}.ch a:hover{color:var(--acc)}
+.lede{max-width:22ch;margin:0 0 14px;font:700 clamp(1.7rem,3.8vw,2.7rem)/1.12 var(--f);letter-spacing:-.025em}
+.cta p:not(.lede){max-width:56ch;margin:0 0 22px;color:var(--mute)}
+footer{padding:14px 0 calc(28px + env(safe-area-inset-bottom,0px));font-size:.95rem}
+footer .blk{padding:22px clamp(20px,4vw,40px);color:var(--mute)}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px 28px}
+footer a{margin-right:16px;text-decoration:none}footer a:hover{color:var(--acc)}
+
+/* idiomas, botões de detalhes, bloco de detalhes e modo leve */
+.langs{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;list-style:none;margin:0;padding:0}
+.langs li{padding:14px 16px;border:1px solid var(--line);border-radius:12px;background:var(--card)}
+.langs b{display:block;font-size:.95rem}.langs span{color:var(--mute);font-size:.88rem}
+.langs i{display:block;height:5px;margin-top:10px;border-radius:9px;background:linear-gradient(90deg,var(--acc) calc(var(--n)*20%),var(--line) 0)}
+.btn.sm{padding:7px 16px;margin-top:10px;border-radius:10px;font-size:.9rem}.proj .btn{align-self:flex-start}
+#lang{width:auto;padding:0 12px;font:600 .9rem var(--f)}
+[hidden]{display:none!important}
+dialog{width:min(980px,100% - 28px);max-width:none;max-height:none;padding:0;border:0;background:none;color:var(--ink);overflow:visible}
+dialog.jarvis-dialog{width:min(1120px,100% - 28px)}
+dialog::backdrop{background:rgba(3,2,10,.66);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px)}
+dialog[open]::backdrop{animation:fd .3s}dialog[open] .dc{animation:pop .4s cubic-bezier(.2,.8,.2,1)}
+@keyframes fd{from{opacity:0}}@keyframes pop{from{opacity:0;transform:translateY(20px) scale(.97)}}
+.dc{position:relative;display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,1fr);overflow:hidden;border:1px solid hsl(var(--hue) 70% 55% / .38);border-radius:24px;background:radial-gradient(560px 320px at 100% 0,hsl(var(--hue) 90% 48% / .26),transparent 70%),linear-gradient(160deg,rgba(26,13,24,.97),rgba(9,7,17,.98));box-shadow:0 40px 100px rgba(0,0,0,.6)}
+/* Modal exclusivo do Jarvis: imagem inteira e mais espaço para a descrição. */
+.dc.jarvis-modal{grid-template-columns:minmax(0,.95fr) minmax(0,1fr)}
+.jarvis-modal .dm{height:min(82vh,760px);min-height:0;display:flex;align-items:center;justify-content:center;background:#05030d}
+.jarvis-modal .cv{display:none}
+.jarvis-modal #di{object-fit:contain;background:#05030d}
+.jarvis-modal .db{max-height:min(82vh,760px)}
+[data-theme=light] .dc{background:#fff;border-color:rgba(18,10,12,.12);box-shadow:0 40px 100px rgba(0,0,0,.5),inset 0 3px 0 var(--fill)}
+.x{position:absolute;top:14px;right:14px;z-index:3;width:40px;height:40px;border:1px solid rgba(255,255,255,.25);border-radius:50%;background:rgba(0,0,0,.5);color:#fff;font-size:1rem;cursor:pointer}.x:hover{border-color:var(--acc)}
+.dm{position:relative;min-height:360px;overflow:hidden;background:#05030d}
+.cv{position:absolute;inset:0;background:radial-gradient(circle at 72% 28%,hsl(var(--hue) 90% 55% / .5),transparent 50%),repeating-radial-gradient(circle at 72% 28%,transparent 0 26px,rgba(255,255,255,.07) 26px 27px),linear-gradient(160deg,#1a0b1c,#05040e)}
+.cv::after{content:"";position:absolute;left:72%;top:28%;width:16px;height:16px;margin:-8px;border-radius:50%;background:hsl(var(--hue) 100% 78%);box-shadow:0 0 34px 12px hsl(var(--hue) 100% 60% / .55)}
+.cv b{position:absolute;left:20px;bottom:0;font:800 clamp(7rem,15vw,11rem)/1 var(--f);letter-spacing:-.06em;color:transparent;-webkit-text-stroke:1.5px hsl(var(--hue) 90% 68% / .55)}
+#di{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.th{position:absolute;left:14px;right:14px;bottom:14px;display:flex;gap:8px}
+.th button{width:56px;height:42px;padding:0;overflow:hidden;border:1px solid rgba(255,255,255,.35);border-radius:8px;background:#000;cursor:pointer}.th img{width:100%;height:100%;object-fit:cover}
+.db{max-height:min(88vh,860px);overflow:auto;padding:clamp(24px,4vw,40px)}
+.dmeta{margin:0 0 8px;color:var(--acc);font-size:.92rem;font-weight:600}
+.db h3{margin:0 0 16px;padding-right:44px;font:700 clamp(1.6rem,3vw,2.2rem)/1.1 var(--f);letter-spacing:-.025em}
+.db .tags{margin-bottom:18px}.dd{margin-bottom:24px;color:var(--mute)}.dd p{margin:0 0 1em}
+html:has(dialog[open]){overflow:hidden}
+.lite .blk,.lite nav,.lite dialog::backdrop{backdrop-filter:none;-webkit-backdrop-filter:none}
+@media(max-width:760px){.dc{grid-template-columns:1fr;max-height:90vh;overflow:auto}.dm{min-height:210px}.db{max-height:none;overflow:visible}
+.dc.jarvis-modal{grid-template-columns:1fr;max-height:90vh;overflow:auto}.jarvis-modal .dm{height:min(42vh,360px);min-height:0}.jarvis-modal .db{max-height:none;overflow:visible}}
+/* menu do topo: sem texto vazando por trás no celular (onde o blur pode estar desligado) */
+.lite{--nav:rgba(6,5,15,.97)}
+@media(max-width:860px){:root{--nav:rgba(6,5,15,.97)}}
+/* Galeria do Jarvis: duas colunas, imagem preenchendo 100% da coluna, troca suave e miniaturas */
+#di2{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+#di,#di2{opacity:0;transition:opacity .9s ease}
+#di.vis,#di2.vis{opacity:1}
+#di.top,#di2.top{z-index:1}
+.th{z-index:2}
+.th button{opacity:.65;transition:opacity .2s,border-color .2s,transform .2s}
+.th button:hover{opacity:1;transform:translateY(-2px)}
+.th button.on{opacity:1;border-color:var(--acc);box-shadow:0 0 0 2px var(--acc)}
+.dc.jarvis-modal{grid-template-columns:minmax(0,.95fr) minmax(0,1fr);max-height:none;overflow:hidden}
+.jarvis-modal .dm{display:block;height:min(82vh,760px);min-height:0}
+.jarvis-modal #di,.jarvis-modal #di2{inset:0 0 84px 0;width:100%;height:calc(100% - 84px);object-fit:cover;background:#05030d}
+.jarvis-modal .th{justify-content:center;bottom:14px}
+.jarvis-modal .th button{width:84px;height:56px}
+.jarvis-modal .db{max-height:min(82vh,760px);overflow:auto}
+.jarvis-modal .dm.lim #di,.jarvis-modal .dm.lim #di2{object-fit:contain}
+@media(max-width:760px){.dc.jarvis-modal{grid-template-columns:1fr;max-height:90vh;overflow:auto}
+.jarvis-modal .dm{height:clamp(260px,52vh,460px)}
+.jarvis-modal #di,.jarvis-modal #di2{inset:0 0 62px 0;height:calc(100% - 62px)}
+.jarvis-modal .th button{width:60px;height:42px}
+.jarvis-modal .db{max-height:none;overflow:visible}}
+@media(max-width:560px){.langs{grid-template-columns:1fr}.grid{grid-template-columns:minmax(0,1fr)}.proj.big{grid-column:auto}}
+@media(max-width:860px){
+.hero-grid,.about,.cta{grid-template-columns:1fr}.id{justify-self:start;max-width:260px}
+.grid{grid-template-columns:minmax(0,1fr)}.proj.big{grid-column:1/-1}
+.glance{grid-template-columns:1fr 1fr}.glance div:nth-child(3){border-left:0}.glance div:nth-child(n+3){border-top:1px solid var(--line)}
+}
+@media(max-width:760px){
+.js #menu{display:block}
+.js nav ul{display:none;position:absolute;top:100%;left:0;right:0;flex-direction:column;gap:2px;padding:12px 24px 20px;background:var(--bg);border-bottom:1px solid var(--line)}
+.js nav ul.open{display:flex}nav li a{padding:12px 14px}
+.rows div{grid-template-columns:1fr}.blk{backdrop-filter:none;-webkit-backdrop-filter:none}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,::before,::after{animation:none!important;transition:none!important}}
+
+/* Personalização exclusiva do Jarvis */
+.proj-jarvis {
+    min-height: 300px;
+    padding: 36px;
+    border-color: rgba(80, 140, 255, 0.45);
+    background:
+        radial-gradient(
+            circle at 90% 10%,
+            rgba(90, 60, 255, 0.16),
+            transparent 45%
+        ),
+        var(--card);
+}
+
+.proj-jarvis h3 {
+    font-size: 2rem;
+}
+
+.proj-jarvis p {
+    max-width: 85ch;
+}
+
+/* ===== melhorias de celular e desktop ===== */
+a,button{-webkit-tap-highlight-color:transparent}button{touch-action:manipulation}
+.up{position:fixed;right:max(16px,env(safe-area-inset-right,0px));bottom:max(16px,env(safe-area-inset-bottom,0px));z-index:25;width:46px;height:46px;border:1px solid rgba(255,255,255,.22);border-radius:50%;background:rgba(10,6,18,.85);color:#fff;font-size:1.2rem;cursor:pointer;opacity:0;transform:translateY(10px);pointer-events:none;transition:opacity .3s,transform .3s,border-color .2s}
+.up.on{opacity:1;transform:none;pointer-events:auto}.up:hover{border-color:var(--acc)}
+.js .blk{transition:opacity .7s ease,transform .7s cubic-bezier(.2,.7,.2,1)}.js .blk.pre{opacity:0;transform:translateY(26px)}
+@media(hover:hover){.proj{transition:transform .25s,border-color .25s}.proj:hover{transform:translateY(-3px)}}
+@media(pointer:coarse){.ib{min-width:44px;height:44px}.btn{min-height:44px}}
+@media(min-width:1500px){html{font-size:106.25%}.wrap{width:min(1280px,100% - 120px)}}
+@media(max-width:560px){.wrap{width:min(1120px,100% - 28px)}.blk{padding:22px 18px}.btns{display:grid;grid-template-columns:1fr 1fr}.btns .btn{justify-content:center;text-align:center}
+.glance{grid-template-columns:1fr}.glance div{border-left:0!important;border-top:1px solid var(--line)}.glance div:first-child{border-top:0}}
+@media(max-width:760px){dialog,dialog.jarvis-dialog{width:100%;max-width:100%;margin:auto 0 0}
+.dc,.dc.jarvis-modal{max-height:92dvh;border-radius:22px 22px 0 0}dialog[open] .dc{animation:sheet .4s cubic-bezier(.2,.8,.2,1)}
+.x{position:fixed;top:calc(12px + env(safe-area-inset-top,0px));right:16px}.db{padding-bottom:calc(28px + env(safe-area-inset-bottom,0px))}}
+@keyframes sheet{from{transform:translateY(100%)}}
+@media print{#neb,#sky,body::before,body::after,nav,.up,#prog,dialog,.btns,button,.tools{display:none!important}
+body{background:#fff;color:#000}.blk{background:#fff!important;color:#000;border:1px solid #ccc;box-shadow:none;break-inside:avoid;opacity:1!important;transform:none!important;--ink:#000;--mute:#333;--line:#ccc;--acc:#a00;--card:#fff}
+section{padding:8px 0}a{color:#000}.hero-grid>*{animation:none!important}}
+
+/* currículos e menu em telas médias */
+.tight{margin-bottom:12px}.cvlead{max-width:62ch;margin:0 0 26px;color:var(--mute)}
+.cvs{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.cvc{position:relative;display:flex;flex-direction:column;gap:6px;padding:22px 22px 20px;border:1px solid var(--line);border-radius:var(--r);background:var(--card);text-decoration:none;transition:border-color .25s,transform .25s}
+.cvc:hover{border-color:var(--acc);transform:translateY(-3px)}
+.cvc b{padding-right:56px;font:700 1.2rem/1.2 var(--f);letter-spacing:-.015em}.cvc span{color:var(--mute)}
+.cvc i{position:absolute;top:20px;right:20px;padding:2px 10px;border:1px solid var(--line);border-radius:99px;color:var(--acc);font:600 .75rem var(--f);font-style:normal}
+.cvc em{margin-top:10px;color:var(--acc);font-style:normal;font-weight:600}
+@media(max-width:700px){.cvs{grid-template-columns:1fr}}
+@media(min-width:761px) and (max-width:920px){.js #menu{display:block}.js nav ul{display:none;position:absolute;top:100%;left:0;right:0;flex-direction:column;gap:2px;padding:12px 24px 20px;background:var(--bg);border-bottom:1px solid var(--line)}.js nav ul.open{display:flex}nav li a{padding:12px 14px}}
+</style>
+</head>
+<body>
+<a class="skip" href="#main" data-en="Skip to content">Pular para o conteúdo</a>
+<div id="prog"></div><button class="up" id="up" type="button" aria-label="Voltar ao topo / Back to top">↑</button><canvas id="neb" aria-hidden="true"></canvas><canvas id="sky" aria-hidden="true"></canvas>
+
+<nav aria-label="Principal"><div class="wrap bar">
+<a class="logo" href="#top" aria-label="Arthur Rabelo, início"><i>AR</i>Arthur Rabelo</a>
+<ul id="links"><li><a href="#sobre" data-en="About">Sobre</a></li><li><a href="#projetos" data-en="Projects">Projetos</a></li><li><a href="#techs" data-en="Technologies">Tecnologias</a></li><li><a href="#trajetoria" data-en="Background">Trajetória</a></li><li><a href="#curriculo" data-en="Résumé">Currículo</a></li><li><a href="#contato" data-en="Contact">Contato</a></li></ul>
+<div class="tools"><button class="ib" id="lang" type="button" aria-label="Português / English">EN</button><button class="ib" id="menu" type="button" aria-expanded="false" aria-controls="links">Menu</button><button class="ib" id="theme" type="button" aria-label="Alternar entre tema claro e escuro">◐</button></div>
+</div></nav>
+
+<header class="hero" id="top"><div class="wrap blk hero-grid">
+<div>
+<span class="status" data-en="Open to internships and entry-level IT roles">Aberto a estágio e posição inicial em TI</span>
+<h1><small data-en="Hi, I’m">Olá, eu sou o</small>Arthur<br>Rabelo</h1>
+<p class="role" data-en="Computer Science student, developer and information security enthusiast">Estudante de Ciência da Computação, desenvolvedor e entusiasta de segurança da informação</p>
+<p class="lead" data-en="I turn theory into hands-on projects: from reverse-engineered mods to computer vision and access-controlled systems.">Transformo teoria em projetos práticos: de mods feitos com engenharia reversa a visão computacional e sistemas com controle de acesso.</p>
+<div class="btns"><a class="btn p" href="#projetos" data-en="View projects">Ver projetos</a><a class="btn" href="#curriculo" data-en="Download résumé">Baixar currículo</a><a class="btn" href="https://github.com/ArthurRabeloNS" target="_blank" rel="noopener">GitHub</a><a class="btn" href="https://www.linkedin.com/in/arthur-rabelo-95124a367/" target="_blank" rel="noopener">LinkedIn</a></div>
+</div>
+<div class="id"><div class="photo"><span aria-hidden="true">AR</span><img src="assets/foto.jpg" alt="Foto de Arthur Rabelo" onerror="this.remove()"></div><div class="cap"><span>São Paulo, SP</span><span>UniFECAF</span></div></div>
+<dl class="glance">
+<div><dt data-en="Education">Formação</dt><dd data-en="B.Sc. in Computer Science, UniFECAF">Bacharelado em Ciência da Computação, UniFECAF</dd></div>
+<div><dt data-en="Current focus">Foco atual</dt><dd data-en="Software Engineering and DevSecOps">Engenharia de Software e DevSecOps</dd></div>
+<div><dt data-en="Interests">Interesses</dt><dd data-en="Full-Stack, Cybersecurity, Databases, Infrastructure">Full-Stack, Cybersecurity, Banco de Dados, Infraestrutura</dd></div>
+<div><dt data-en="Mindset">Mentalidade</dt><dd data-en="Reverse engineering, automation and continuous improvement">Engenharia reversa, automação e melhoria contínua</dd></div>
+</dl>
+</div></header>
+
+<main id="main">
+<section id="sobre"><div class="wrap blk">
+<h2 data-en="About me">Sobre mim</h2>
+<div class="about">
+<div>
+<p data-en="I’m a <b>Computer Science student at UniFECAF</b>, fascinated by building smart solutions, solving complex problems and exploring the world of digital security. I like taking theory off the paper through practical, challenging projects.">Sou estudante de <b>Ciência da Computação na UniFECAF</b>, fascinado por criar soluções inteligentes, resolver problemas complexos e explorar o universo da segurança digital. Gosto de tirar a teoria do papel através de projetos práticos e desafiadores.</p>
+<p data-en="I learn fast, think analytically and communicate well, so I work well in multidisciplinary teams.">Tenho rápida curva de aprendizado, mentalidade analítica e boa comunicação para trabalhar em equipes multidisciplinares.</p>
+<p data-en="Outside of code: adrenaline sports, cooking (the kitchen is my experiment lab) and music to focus and unplug from the terminal.">Fora do código: esportes de adrenalina, culinária (a cozinha é meu laboratório de experimentos) e música para focar e desconectar do terminal.</p>
+<h3 data-en="Languages">Idiomas</h3>
+<ul class="langs">
+<li><b data-en="Portuguese (Brazil)">Português (Brasil)</b><span data-en="Fluent">Fluente</span><i style="--n:5"></i></li>
+<li><b data-en="English">Inglês</b><span data-en="Intermediate">Intermediário</span><i style="--n:3"></i></li>
+<li><b data-en="Spanish">Espanhol</b><span data-en="Basic">Básico</span><i style="--n:1"></i></li>
+</ul>
+</div>
+<div>
+<h3 data-en="Security interests">Áreas de interesse em segurança</h3>
+<ul class="tags"><li data-en="Network security">Segurança de redes</li><li data-en="Vulnerability analysis">Análise de vulnerabilidades</li><li data-en="Pentesting and Ethical Hacking">Pentest e Ethical Hacking</li><li data-en="Incident analysis">Análise de incidentes</li><li data-en="Application security">Segurança de aplicações</li></ul>
+<h3 data-en="Soft skills">Competências comportamentais</h3>
+<ul class="tags"><li data-en="Logical reasoning">Raciocínio lógico</li><li data-en="Problem solving">Resolução de problemas</li><li data-en="Technical curiosity">Curiosidade técnica</li><li data-en="Fast learning">Aprendizado rápido</li><li data-en="Persistence">Persistência</li><li data-en="Proactivity">Proatividade</li><li data-en="Teamwork">Trabalho em equipe</li></ul>
+</div></div></div></section>
+
+<section id="projetos"><div class="wrap blk">
+<h2 data-en="Featured projects">Projetos em destaque</h2>
+<div class="grid">
+<article class="proj big proj-jarvis"><span class="meta" data-en="Personal AI agent · actively evolving">Agente pessoal de IA · em evolução constante</span><h3>Jarvis</h3>
+<p data-en="A personal desktop and web agent that manages files and folders, monitors RAM usage, analyzes the screen, and uses persistent memory and learned workflows. It also summarizes YouTube videos, translates files and converts document formats.">Agente pessoal para desktop e web que organiza arquivos e pastas, monitora o uso de RAM, analisa a tela e usa memória persistente e esquemas aprendidos nas próprias experiências. Também resume vídeos do YouTube, traduz arquivos e converte formatos de documentos.</p>
+<button class="btn" type="button" data-open="jarvis" data-en="View details">Ver detalhes</button></article>
+<article class="proj proj-camera"><span class="meta" data-en="Computer vision, evolving">Visão computacional, em evolução</span><h3>projetoDeCamera</h3>
+<p data-en="Real-time computer vision: users paint digitally using only hand movements.">Visão computacional em tempo real: o usuário pinta digitalmente só com o movimento das mãos.</p>
+<button class="btn" type="button" data-open="camera" data-en="View details">Ver detalhes</button></article>
+<article class="proj proj-stevecube"><span class="meta" data-en="Overcooked! 2 mod, v0.7.3">Mod para Overcooked! 2, v0.7.3</span><h3>SteveCube</h3>
+<p data-en="A mod that adds Minecraft’s Steve as a playable chef in Overcooked! 2, built through reverse engineering.">Mod que coloca o Steve, do Minecraft, como chef jogável no Overcooked! 2, criado com engenharia reversa.</p>
+<button class="btn" type="button" data-open="stevecube" data-en="View details">Ver detalhes</button></article>
+<article class="proj proj-login"><span class="meta" data-en="Authentication and databases">Autenticação e banco de dados</span><h3 data-en="Login and management system">Sistema de login e gerenciamento</h3>
+<p data-en="User registration and authentication with access levels (Administrator and Client).">Cadastro e autenticação de usuários com níveis de acesso (Administrador e Cliente).</p>
+<button class="btn" type="button" data-open="login" data-en="View details">Ver detalhes</button></article>
+</div>
+<p class="more" data-en="I have also built responsive web interfaces and games and prototypes in Pygame, Kotlin and Roblox Studio (Lua).">Também construí interfaces web responsivas e jogos e protótipos em Pygame, Kotlin e Roblox Studio (Lua).</p>
+<p class="more" data-en="New experiments are on the way. <a href='https://github.com/ArthurRabeloNS?tab=repositories' target='_blank' rel='noopener'>See all repositories on GitHub</a>">Novos experimentos estão a caminho. <a href="https://github.com/ArthurRabeloNS?tab=repositories" target="_blank" rel="noopener">Ver todos os repositórios no GitHub</a></p>
+</div></section>
+
+<section id="techs"><div class="wrap blk">
+<h2 data-en="Technologies">Tecnologias</h2>
+<dl class="rows">
+<div><dt>Web Front-End</dt><dd>HTML5, CSS3, JavaScript</dd></div>
+<div><dt data-en="Back-End and Scripting">Back-End e Scripting</dt><dd data-en="Python (intermediate), C# (intermediate), Node.js">Python (intermediário), C# (intermediário), Node.js</dd></div>
+<div><dt data-en="Databases">Banco de Dados</dt><dd data-en="SQL (MySQL), relational modeling">SQL (MySQL), modelagem relacional</dd></div>
+<div><dt>Mobile</dt><dd data-en="Kotlin (fundamentals), Android Studio">Kotlin (fundamentos), Android Studio</dd></div>
+<div><dt>Cybersecurity</dt><dd data-en="Cryptography (basics), OWASP Top 10, reverse engineering (dnSpy), access control, secure development">Criptografia (noções), OWASP Top 10, engenharia reversa (dnSpy), controle de acesso, desenvolvimento seguro</dd></div>
+<div><dt data-en="Tools">Ferramentas</dt><dd>Git, GitHub, Git Flow, VS Code, Figma, dnSpy</dd></div>
+<div><dt data-en="Libraries and Games">Bibliotecas e Jogos</dt><dd>OpenCV, MediaPipe, customtkinter, pywebview, Pygame, BepInEx, Roblox Studio (Lua)</dd></div>
+<div><dt data-en="Hardware and Support">Hardware e Suporte</dt><dd data-en="Fault diagnosis, assembly and maintenance of PCs, smartphones and TVs, networks and servers">Diagnóstico de falhas, montagem e manutenção de PCs, smartphones e TVs, redes e servidores</dd></div>
+</dl>
+</div></section>
+
+<section id="trajetoria"><div class="wrap blk">
+<h2 data-en="Background">Trajetória</h2>
+<h3 class="grp" data-en="Experience">Experiência</h3>
+<ul class="tl">
+<li><time data-en="Jul/2026 – present">Jul/2026 – atual</time><h4 data-en="Classroom monitor · Brasil Mobile School">Monitor de sala · Brasil Mobile School</h4><p data-en="Guiding students and supporting the lab.">Orientação de alunos e apoio no laboratório.</p><button class="btn sm" type="button" data-open="monitor" data-en="View details">Ver detalhes</button></li>
+</ul>
+<h3 class="grp" data-en="Education">Formação</h3>
+<ul class="tl">
+<li><time data-en="Feb/2026 – Dec/2029">Fev/2026 – Dez/2029</time><h4 data-en="Computer Science · UniFECAF">Ciência da Computação · UniFECAF</h4><p data-en="Bachelor’s degree in progress.">Bacharelado em andamento.</p><button class="btn sm" type="button" data-open="unifecaf" data-en="View details">Ver detalhes</button></li>
+<li><time>2025</time><h4 data-en="High school · E.E. Prof. Alípio de Oliveira e Silva">Ensino Médio · E.E. Prof. Alípio de Oliveira e Silva</h4><p data-en="Completed.">Concluído.</p><button class="btn sm" type="button" data-open="medio" data-en="View details">Ver detalhes</button></li>
+</ul>
+<h3 class="grp" data-en="Courses and experiences">Cursos e vivências</h3>
+<ul class="tl">
+<li><time data-en="In progress">Em andamento</time><h4 data-en="Game Development with Kotlin · BMS">Desenvolvimento de Jogos com Kotlin · BMS</h4><p data-en="Course at Brasil Mobile School.">Curso na Brasil Mobile School.</p><button class="btn sm" type="button" data-open="kotlin" data-en="View details">Ver detalhes</button></li>
+<li><time data-en="Feb – Dec/2025">Fev – Dez/2025</time><h4 data-en="Front-End Web Design · Instituto Ana Rosa">Web Design Front-End · Instituto Ana Rosa</h4><p data-en="Course in partnership with SENAI and the São Paulo City Hall.">Curso em parceria com SENAI e Prefeitura de SP.</p><button class="btn sm" type="button" data-open="webdesign" data-en="View details">Ver detalhes</button></li>
+<li><time data-en="Aug and Nov/2025">Ago e Nov/2025</time><h4 data-en="My World My Work and Career Mentoring">Meu Mundo Meu Trabalho e Mentoria de Carreira</h4><p data-en="Job-market preparation and career mentoring.">Preparação para o mercado e mentoria de carreira.</p><button class="btn sm" type="button" data-open="meumundo" data-en="View details">Ver detalhes</button></li>
+<li><time>2025</time><h4 data-en="Technical visits · Banco BMG and CCO Vila Sônia">Visitas técnicas · Banco BMG e CCO Vila Sônia</h4><p data-en="Corporate environment and real-time operations.">Ambiente corporativo e operação em tempo real.</p><button class="btn sm" type="button" data-open="visitas" data-en="View details">Ver detalhes</button></li>
+</ul>
+</div></section>
+
+<section id="curriculo"><div class="wrap blk">
+<h2 class="tight" data-en="Résumé">Currículo</h2>
+<p class="cvlead" data-en="Pick the version closest to the role. The PDFs are in Portuguese.">Escolha a versão mais próxima da vaga. Todas estão atualizadas e liberadas para download.</p>
+<div class="cvs">
+<a class="cvc" href="assets/curriculo-arthur-rabelo-desenvolvimento.pdf" download><i>PDF</i><b data-en="Software Development">Desenvolvimento de Software</b><span data-en="Projects in Python, C# and JavaScript, such as Jarvis, SteveCube and computer vision.">Projetos em Python, C# e JavaScript, como Jarvis, SteveCube e visão computacional.</span><em data-en="Download résumé">Baixar currículo</em></a>
+<a class="cvc" href="assets/curriculo-arthur-rabelo-cybersecurity.pdf" download><i>PDF</i><b data-en="Cyber Security">Cyber Security</b><span data-en="Information security, access control, OWASP Top 10 and reverse engineering.">Segurança da informação, controle de acesso, OWASP Top 10 e engenharia reversa.</span><em data-en="Download résumé">Baixar currículo</em></a>
+<a class="cvc" href="assets/curriculo-arthur-rabelo-ti-geral.pdf" download><i>PDF</i><b data-en="General IT (internship)">TI em geral (estágio)</b><span data-en="The full picture: programming, databases, technical support and networks.">Visão completa: programação, banco de dados, suporte técnico e redes.</span><em data-en="Download résumé">Baixar currículo</em></a>
+<a class="cvc" href="assets/curriculo-arthur-rabelo-suporte.pdf" download><i>PDF</i><b data-en="Support and Infrastructure">Suporte e Infraestrutura</b><span data-en="Computer maintenance, fault diagnosis, networks and servers.">Manutenção de computadores, diagnóstico de falhas, redes e servidores.</span><em data-en="Download résumé">Baixar currículo</em></a>
+</div>
+</div></section>
+
+<section id="contato"><div class="wrap blk">
+<h2 data-en="Let’s connect?">Vamos nos conectar?</h2>
+<div class="cta">
+<div><p class="lede" data-en="I’m looking for an internship or an entry-level IT role.">Procuro estágio ou posição inicial em TI.</p>
+<p data-en="Whether to exchange ideas about software architecture, security tools, open-source projects or just chat about music.">Seja para trocar ideias sobre arquitetura de software, ferramentas de segurança, projetos open-source ou só bater um papo sobre música.</p>
+<div class="btns"><a class="btn p" href="mailto:arthur.rabelo.n.da.s@gmail.com" data-en="Send email">Enviar e-mail</a><button class="btn" id="copy" type="button" aria-live="polite" data-en="Copy email">Copiar e-mail</button></div></div>
+<dl class="ch">
+<div><dt data-en="Email">E-mail</dt><dd><a href="mailto:arthur.rabelo.n.da.s@gmail.com">arthur.rabelo.n.da.s@gmail.com</a></dd></div>
+<div><dt>LinkedIn</dt><dd><a href="https://www.linkedin.com/in/arthur-rabelo-95124a367/" target="_blank" rel="noopener">linkedin.com/in/arthur-rabelo-95124a367</a></dd></div>
+<div><dt>GitHub</dt><dd><a href="https://github.com/ArthurRabeloNS" target="_blank" rel="noopener">github.com/ArthurRabeloNS</a></dd></div>
+<!-- WhatsApp: apague esta linha se não quiser o número público -->
+<div><dt>WhatsApp</dt><dd><a href="https://wa.me/5511992884929" target="_blank" rel="noopener">(11) 99288-4929</a></dd></div>
+<div><dt data-en="Location">Local</dt><dd>São Paulo, SP</dd></div>
+</dl>
+</div></div></section>
+</main>
+
+<footer><div class="wrap blk"><span data-en="Studying today, building tomorrow.">Estudando hoje, construindo o amanhã.</span><span><a href="https://github.com/ArthurRabeloNS" target="_blank" rel="noopener">GitHub</a><a href="https://www.linkedin.com/in/arthur-rabelo-95124a367/" target="_blank" rel="noopener">LinkedIn</a><a href="#top" data-en="Back to top">Voltar ao topo</a></span><span>© <span id="y">2026</span> Arthur Rabelo</span></div></footer>
+
+<!-- ===== BLOCO DE DETALHES (abre ao clicar em "Ver detalhes") =====
+     Os dados vêm do objeto ITEMS no <script>: FOTOS = f, DESCRIÇÃO DETALHADA = d, TAGS = t. -->
+<dialog id="dlg" aria-labelledby="dt"><div class="dc">
+<button class="x" type="button" aria-label="Fechar">✕</button>
+<div class="dm"><div class="cv" aria-hidden="true"><b></b></div>
+<!-- ▼ LUGAR DA FOTO PRINCIPAL (ITEMS.f[0]); com mais de uma foto, as miniaturas aparecem em #dth -->
+<img id="di" alt="" hidden><div class="th" id="dth"></div></div>
+<div class="db"><p class="dmeta" id="dmeta"></p><h3 id="dt"></h3><ul class="tags" id="dtags"></ul>
+<!-- ▼ LUGAR DA DESCRIÇÃO DETALHADA (ITEMS.d) -->
+<div class="dd" id="dd"></div>
+<a class="btn p" id="dl" target="_blank" rel="noopener" data-en="View repository" hidden>Ver repositório</a></div>
+</div></dialog>
+
+<script>
+(function(){
+var d=document,R=d.documentElement;
+d.getElementById('y').textContent=new Date().getFullYear();
+// tema (lembra a escolha)
+var tb=d.getElementById('theme');
+tb.onclick=function(){var t=R.dataset.theme==='light'?'dark':'light';R.dataset.theme=t;try{localStorage.setItem('theme',t)}catch(e){}};
+// menu mobile
+var mb=d.getElementById('menu'),ul=d.getElementById('links');
+function shut(){ul.classList.remove('open');mb.setAttribute('aria-expanded','false')}
+mb.onclick=function(){mb.setAttribute('aria-expanded',ul.classList.toggle('open'))};
+ul.addEventListener('click',function(e){if(e.target.closest('a'))shut()});
+addEventListener('keydown',function(e){if(e.key==='Escape')shut()});
+// progresso de leitura e seção ativa
+var pr=d.getElementById('prog'),L=d.querySelectorAll('#links a');
+addEventListener('scroll',function(){var h=R.scrollHeight-R.clientHeight;pr.style.width=(h>0?R.scrollTop/h*100:0)+'%'},{passive:true});
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting)L.forEach(function(a){a.classList.toggle('on',a.getAttribute('href')==='#'+e.target.id)})})},{rootMargin:'-45% 0px -50% 0px'});
+d.querySelectorAll('main section').forEach(function(s){io.observe(s)});
+// copiar e-mail
+var cb=d.getElementById('copy'),mail='arthur.rabelo.n.da.s@gmail.com';
+cb.onclick=function(){function ok(){cb.textContent=lang==='en'?'Email copied':'E-mail copiado';setTimeout(function(){cb.textContent=lang==='en'?'Copy email':'Copiar e-mail'},2000)}
+if(navigator.clipboard){navigator.clipboard.writeText(mail).then(ok,function(){location.href='mailto:'+mail})}else location.href='mailto:'+mail};
+/* ===== DADOS DOS BLOCOS "VER DETALHES" (projetos e trajetória) =====
+   A chave (ex.: stevecube) é a mesma do data-open do botão no HTML.
+   f: FOTOS do projeto/curso → liste os caminhos, ex.: ['assets/stevecube-1.jpg','assets/stevecube-2.jpg']
+   d: DESCRIÇÃO DETALHADA → ['texto em português','text in English'] (aceita HTML: <p>, <b>, <ul>)
+   t: TAGS (só projetos; use 'PT|EN' quando o nome mudar de idioma)   l: link do repositório (opcional)
+   Sem f aparece uma capa decorativa; sem d, o bloco usa o texto curto do cartão. */
+var ITEMS={
+stevecube:{f:[],t:['C#','dnSpy','Unity','BepInEx'],l:'https://github.com/ArthurRabeloNS/Jogos_Games',d:['<p>Mod que injeta o Steve (Minecraft) como chef jogável dentro do Overcooked! 2. Descompilei e analisei o código do jogo para criar um personagem montado com 6 cubos presos aos ossos do chef, com animações, HUD estilo Minecraft, hotbar, colocação e quebra de blocos, TNT e Ender Pearl.</p>','<p>A mod that injects Minecraft’s Steve as a playable chef in Overcooked! 2. I decompiled and analyzed the game code to build a character made of 6 cubes attached to the chef’s bones, with animations, a Minecraft-style HUD, hotbar, block placing and breaking, TNT and Ender Pearl.</p>']},
+camera:{f:[],t:['Python','OpenCV','MediaPipe'],l:'https://github.com/ArthurRabeloNS/Interativo',d:['<p>Aplicação de visão computacional em tempo real, com reconhecimento facial e rastreamento gestual. O usuário pinta digitalmente usando apenas os movimentos das mãos. Em evolução para controlar o computador por gestos.</p>','<p>A real-time computer vision application with face recognition and gesture tracking. Users paint digitally using only hand movements. Evolving to control the computer through gestures.</p>']},
+jarvis:{f:["assets/jarvis.jpg","assets/fazer_jarvis.jpg","assets/trabalho_jarvis.jpg"],t:['Python','customtkinter','pywebview','HTML/CSS/JS','Automação local|Local automation','Memória persistente|Persistent memory','Análise de tela|Screen analysis','Conversão de arquivos|File conversion'],d:['<p><b>Jarvis é meu agente pessoal para desktop e web.</b> Ele pode executar ações no computador, como criar e organizar pastas, mover, renomear e excluir arquivos, além de analisar arquivos e verificar se o ambiente está em ordem. Também acompanha o uso de RAM e pode alertar quando o consumo está alto.</p><p>Ele mantém memória persistente em JSON e registra logs. O sistema de <b>lembranças</b> foi pensado para guardar esquemas de tarefas já realizadas e erros encontrados, permitindo consultar experiências anteriores e aprimorar procedimentos futuros. A interface web tem uma esfera animada e um cenário espacial.</p><p>O Jarvis também pode resumir vídeos do YouTube, traduzir arquivos, converter documentos entre formatos (por exemplo, PDF para Word) e analisar o que aparece na tela. O projeto continua em desenvolvimento: há muito espaço para ampliar a confiabilidade, as automações e a capacidade de verificação das ações.</p>','<p><b>Jarvis is my personal desktop and web agent.</b> It can perform actions on the computer, such as creating and organizing folders, moving, renaming and deleting files, as well as inspecting files and checking the system environment. It also monitors RAM usage and can warn when memory consumption is high.</p><p>It keeps persistent memory in JSON and records logs. Its <b>experiences</b> system is designed to store workflows from completed tasks and errors encountered, so previous experiences can be consulted to improve future procedures. The web interface features an animated sphere and a space-themed background.</p><p>Jarvis can also summarize YouTube videos, translate files, convert documents between formats (for example, PDF to Word), and analyze what is displayed on screen. The project is still in development, with plenty of room to improve reliability, automation and action verification.</p>']},
+login:{f:[],t:['Python','SQL','Controle de acesso|Access control'],d:['<p>Cadastro e autenticação de usuários com níveis de acesso (Administrador e Cliente), CRUD e consultas com JOINs, com análise e correção de erros durante o desenvolvimento.</p>','<p>User registration and authentication with access levels (Administrator and Client), CRUD and queries with JOINs, including analysis and fixing of errors during development.</p>']},
+/* trajetória: preencha f (fotos) e d (descrição detalhada) para enriquecer cada bloco */
+monitor:{f:[],d:['<p>Oriento alunos em atividades de programação, apoio os professores no laboratório e faço diagnósticos preventivos de falhas nos equipamentos.</p>','<p>I guide students in programming activities, support teachers in the lab and run preventive fault diagnostics on the equipment.</p>']},
+unifecaf:{f:[]},medio:{f:[]},kotlin:{f:[]},webdesign:{f:[]},
+meumundo:{f:[],d:['<p>17h de preparação para o mercado de trabalho e 12h de mentoria de carreira.</p>','<p>17h of job-market preparation and 12h of career mentoring.</p>']},
+visitas:{f:[],d:['<p>Ambiente corporativo e monitoramento e operação em tempo real.</p>','<p>Corporate environment and real-time monitoring and operations.</p>']}
+};
+// idioma (PT/EN) e blocos de detalhes
+var lang='pt',ck,cur={},tm,idx=0,front,ar=.64,dlg=d.getElementById('dlg'),di=d.getElementById('di'),th=d.getElementById('dth'),dlk=d.getElementById('dl');
+try{if(localStorage.getItem('lang')==='en')lang='en'}catch(e){}
+function fill(k){ck=k;var it=ITEMS[k]||{},c=d.querySelector('[data-open="'+k+'"]').closest('article,li'),ti=c.querySelector('h3,h4').textContent,f=it.f||[],m=c.querySelector('.meta,time'),L=lang==='en'?1:0;cur=it;
+dlg.classList.toggle('jarvis-dialog',k==='jarvis');d.querySelector('.dc').classList.toggle('jarvis-modal',k==='jarvis');
+d.getElementById('dt').textContent=ti;d.getElementById('dmeta').textContent=m?m.textContent:'';d.querySelector('.cv b').textContent=ti.charAt(0).toUpperCase();
+d.getElementById('dtags').innerHTML=(it.t||[]).map(function(t){var q=t.split('|');return'<li>'+(q[L]||q[0])+'</li>'}).join('');
+d.getElementById('dd').innerHTML=it.d?it.d[L]:'<p>'+c.querySelector('p').innerHTML+'</p>';
+clearInterval(tm);[di,di2].forEach(function(e){e.classList.remove('vis','top');e.hidden=!f.length});front=di;idx=0;
+if(f.length){di.src=f[0];di.alt=di2.alt=ti;di.classList.add('vis','top')}
+fit();if(k==='jarvis'&&f.length){var im=new Image();im.onload=function(){if(ck==='jarvis'){ar=im.naturalWidth/im.naturalHeight;fit()}};im.src=f[0]}
+th.innerHTML=f.length>1?f.map(function(u,i){return'<button type="button" data-i="'+i+'"><img src="'+u+'" alt=""></button>'}).join(''):'';mark(0);play();
+dlk.hidden=!it.l;if(it.l)dlk.href=it.l}
+var di2=di.cloneNode();di2.id='di2';di.parentNode.insertBefore(di2,di.nextSibling);front=di;
+di.onerror=function(){di.hidden=true};
+/* ajusta a largura da coluna da imagem ao formato da foto (sem faixas pretas) */
+function fit(){var m=d.querySelector('.dc'),dm=m.querySelector('.dm');
+m.style.gridTemplateColumns='';dm.style.height='';dm.classList.remove('lim');
+if(!dlg.open||ck!=='jarvis')return;
+if(innerWidth<=760){ /* celular: largura 100%, altura = a da imagem (sem cortar) */
+var w=m.clientWidth,h=w/ar,mx=innerHeight*.7;if(h>mx){h=mx;dm.classList.add('lim')}
+dm.style.height=Math.round(h+62)+'px';return}
+var hh=dm.clientHeight-84,ww=Math.min(hh*ar,m.clientWidth*.58);if(hh>0)m.style.gridTemplateColumns=Math.round(ww)+'px minmax(0,1fr)'}
+addEventListener('resize',fit);
+function mark(i){[].forEach.call(th.children,function(el,j){el.classList.toggle('on',j==i)})}
+/* troca suave (fade) entre duas camadas de imagem; automática a cada 10 s */
+function go(i){var f=cur.f||[];if(!f.length)return;idx=i;var nx=front===di?di2:di,old=front;
+function show(){nx.onload=null;nx.classList.add('vis','top');old.classList.remove('top');front=nx;mark(i);
+setTimeout(function(){if(old!==front)old.classList.remove('vis')},1000)}
+nx.hidden=false;nx.onload=show;nx.src=f[i];if(nx.complete&&nx.naturalWidth)show()}
+function play(){clearInterval(tm);if(!rm&&cur.f&&cur.f.length>1)tm=setInterval(function(){go((idx+1)%cur.f.length)},10000)}
+th.onclick=function(e){var b=e.target.closest('button');if(b){go(+b.dataset.i);play()}};
+dlg.addEventListener('close',function(){clearInterval(tm)});
+d.addEventListener('click',function(e){var b=e.target.closest('[data-open]');if(b){fill(b.dataset.open);dlg.showModal()}if(e.target===dlg)dlg.close()});
+d.querySelector('.x').onclick=function(){dlg.close()};
+function setLang(l){lang=l;R.lang=l==='en'?'en':'pt-BR';
+d.querySelectorAll('[data-en]').forEach(function(e){if(e.dataset.pt==null)e.dataset.pt=e.innerHTML;e.innerHTML=l==='en'?e.dataset.en:e.dataset.pt});
+d.title=l==='en'?'Arthur Rabelo | Developer and Computer Science student':'Arthur Rabelo | Desenvolvedor e estudante de Ciência da Computação';
+d.getElementById('lang').textContent=l==='en'?'PT':'EN';d.querySelector('.x').setAttribute('aria-label',l==='en'?'Close':'Fechar');
+try{localStorage.setItem('lang',l)}catch(e){}
+if(dlg.open)fill(ck)}
+d.getElementById('lang').onclick=function(){setLang(lang==='en'?'pt':'en')};
+if(lang==='en')setLang('en');
+// ===== melhorias: voltar ao topo, blocos que aparecem ao rolar, menu fecha ao tocar fora, galeria por teclado e swipe =====
+var up=d.getElementById('up');
+up.onclick=function(){scrollTo({top:0,behavior:rm?'auto':'smooth'})};
+addEventListener('scroll',function(){up.classList.toggle('on',scrollY>900)},{passive:true});
+d.addEventListener('click',function(e){if(!e.target.closest('nav'))shut()});
+var rv=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.remove('pre');rv.unobserve(e.target)}})},{rootMargin:'0px 0px -8% 0px'});
+d.querySelectorAll('main .blk,footer .blk').forEach(function(b){if(b.getBoundingClientRect().top>innerHeight*.9){b.classList.add('pre');rv.observe(b)}});
+dlg.addEventListener('keydown',function(e){var f=cur.f||[];if(f.length>1&&(e.key==='ArrowRight'||e.key==='ArrowLeft')){go((idx+(e.key==='ArrowRight'?1:f.length-1))%f.length);play()}});
+var sx=0,dmEl=d.querySelector('.dm');
+dmEl.addEventListener('touchstart',function(e){sx=e.touches[0].clientX},{passive:true});
+dmEl.addEventListener('touchend',function(e){var f=cur.f||[],dx=e.changedTouches[0].clientX-sx;if(f.length>1&&Math.abs(dx)>50){go((idx+(dx<0?1:f.length-1))%f.length);play()}});
+// céu: nebulosas, Via Láctea, estrelas com paralaxe, planeta anelado, lua e estrelas cadentes
+var nb=d.getElementById('neb'),c=d.getElementById('sky'),x=c.getContext('2d'),pl=d.createElement('canvas'),
+W=0,H=0,k=1,mob,S=[],M=[],P={},SP={},sy=0,px=0,py=0,tx=0,ty=0,nx=2500,rt,
+rm=matchMedia('(prefers-reduced-motion: reduce)').matches,
+PAL=[[232,167,124],[201,107,82],[143,47,58],[217,138,98],[110,31,51],[180,74,72],[74,21,48]],
+RB=[[1.3,1.42,'217,183,154',.3],[1.42,1.55,'184,143,120',.5],[1.55,1.66,'232,205,176',.58],[1.72,1.86,'224,185,160',.55],[1.92,2.02,'216,184,166',.4]];
+function rn(a,b){return a+Math.random()*(b-a)}
+function gs(){return(Math.random()+Math.random()+Math.random()+Math.random()-2)/2}
+function tint(){var r=Math.random();return r<.6?'255,255,255':r<.8?'170,200,255':r<.93?'255,225,180':'255,150,160'}
+function star(){var r=Math.random();return r<.34?'255,255,255':r<.58?'175,205,255':r<.76?'255,244,224':r<.88?'255,222,170':r<.95?'255,184,140':'255,150,160'}
+function spk(col){var n='k'+col;if(SP[n])return SP[n];var q=d.createElement('canvas');q.width=q.height=128;var g=q.getContext('2d'),h=g.createLinearGradient(0,0,128,0),v=g.createLinearGradient(0,0,0,128);
+[h,v].forEach(function(l){l.addColorStop(0,'rgba('+col+',0)');l.addColorStop(.5,'rgba('+col+',.95)');l.addColorStop(1,'rgba('+col+',0)')});
+g.fillStyle=h;g.fillRect(0,63,128,2);g.fillStyle=v;g.fillRect(63,0,2,128);return SP[n]=q}
+function pal(t){t=Math.max(0,Math.min(.9999,t))*6;var i=t|0,f=t-i,a=PAL[i],b=PAL[i+1];return[0,1,2].map(function(j){return Math.round(a[j]+(b[j]-a[j])*f)}).join()}
+function blob(g,X,Y,r,col,a){var q=g.createRadialGradient(X,Y,0,X,Y,r);q.addColorStop(0,'rgba('+col+','+a+')');q.addColorStop(1,'rgba('+col+',0)');g.fillStyle=q;g.fillRect(X-r,Y-r,2*r,2*r)}
+function spr(col){if(SP[col])return SP[col];var q=d.createElement('canvas');q.width=q.height=64;var g2=q.getContext('2d'),g=g2.createRadialGradient(32,32,0,32,32,32);
+g.addColorStop(0,'rgba(255,255,255,1)');g.addColorStop(.12,'rgba('+col+',.9)');g.addColorStop(.4,'rgba('+col+',.18)');g.addColorStop(1,'rgba('+col+',0)');g2.fillStyle=g;g2.fillRect(0,0,64,64);return SP[col]=q}
+function nebula(){var g=nb.getContext('2d'),s=Math.min(W,H)*(mob?.16:.13),i,n,t,o,X,Y,cx=W/2,cy=H/2,ca=Math.cos(-.5),sa=Math.sin(-.5),L=Math.hypot(W,H)*.62;
+g.setTransform(k,0,0,k,0,0);g.clearRect(0,0,W,H);g.globalCompositeOperation='lighter';
+[[.82,.2,'255,60,100'],[.14,.76,'70,115,255'],[.45,.07,'150,90,255']].forEach(function(b){X=W*b[0];Y=H*b[1];for(i=0;i<(mob?22:34);i++){X+=gs()*s*.9;Y+=gs()*s*.6;blob(g,X,Y,rn(.5,1.2)*s,b[2],rn(.025,.06))}});
+for(i=0;i<24;i++){t=rn(-1,1);o=gs()*s*.5;n=1-Math.abs(t);blob(g,cx+ca*t*L-sa*o,cy+sa*t*L+ca*o,rn(.6,1.4)*s*(1.3-Math.abs(t)*.6),n>.55?'255,200,160':i%2?'130,140,255':'110,170,255',.06*(.5+n))}
+for(i=0,n=W*H/(mob?1400:700);i<n;i++){t=rn(-1,1);o=gs()*s*(1.1-Math.abs(t)*.55);g.fillStyle='rgba('+tint()+','+rn(.1,.55)+')';g.fillRect(cx+ca*t*L-sa*o,cy+sa*t*L+ca*o,rn(.5,1.2),rn(.5,1.2))}
+g.globalCompositeOperation='source-over';
+for(i=0,n=W*H/(mob?2600:1500);i<n;i++){o=Math.random();g.fillStyle='rgba('+star()+','+(o>.93?rn(.55,.9):rn(.12,.55))+')';t=o>.93?rn(1.1,1.7):rn(.5,1.05);g.fillRect(rn(0,W),rn(0,H),t,t)}}
+function ring(q,mx,my,R,front){q.save();q.translate(mx,my);q.rotate(-.31);q.beginPath();q.rect(-4*R,front?0:-4*R,8*R,4*R);q.clip();
+RB.forEach(function(b){q.fillStyle='rgba('+b[2]+','+b[3]+')';q.beginPath();q.ellipse(0,0,R*b[1],R*b[1]*.22,0,0,6.283);q.moveTo(R*b[0],0);q.ellipse(0,0,R*b[0],R*b[0]*.22,0,0,6.283);q.fill('evenodd')});q.restore()}
+function planet(){var R=P.R,q=pl.getContext('2d'),mx=2.1*R,my=1.3*R,g,y,i;
+pl.width=Math.ceil(4.2*R*k);pl.height=Math.ceil(2.6*R*k);q.setTransform(k,0,0,k,0,0);
+g=q.createRadialGradient(mx,my,R*.95,mx,my,R*1.28);g.addColorStop(0,'rgba(255,110,80,.38)');g.addColorStop(1,'rgba(255,110,80,0)');q.fillStyle=g;q.beginPath();q.arc(mx,my,R*1.28,0,6.283);q.fill();
+ring(q,mx,my,R,0);
+q.save();q.translate(mx,my);q.rotate(-.31);q.beginPath();q.arc(0,0,R,0,6.283);q.clip();
+for(y=-R;y<R;y++){i=(y+R)/R*330;q.fillStyle='rgb('+pal(.5+.5*(Math.sin(i*.045)+Math.sin(i*.113+1.3)*.6+Math.sin(i*.021+2)*.8)/2.4)+')';q.fillRect(-R,y,2*R,1.5)}
+for(i=0;i<(mob?60:120);i++){q.fillStyle='rgba('+pal(Math.random())+','+rn(.06,.16)+')';q.beginPath();q.ellipse(rn(-R,R),rn(-R,R),rn(.06,.3)*R,rn(.01,.04)*R+1,0,0,6.283);q.fill()}
+q.restore();
+q.save();q.translate(mx,my);q.beginPath();q.arc(0,0,R,0,6.283);q.clip();
+g=q.createRadialGradient(-R*.38,-R*.42,R*.08,0,0,R*1.12);g.addColorStop(0,'rgba(255,235,215,.22)');g.addColorStop(.45,'rgba(0,0,0,0)');g.addColorStop(.78,'rgba(2,2,12,.55)');g.addColorStop(1,'rgba(0,0,8,.94)');
+q.fillStyle=g;q.fillRect(-R,-R,2*R,2*R);q.restore();ring(q,mx,my,R,1);q.globalCompositeOperation='source-atop';q.fillStyle='rgba(6,5,15,.4)';q.fillRect(0,0,4.2*R,2.6*R)}
+function moon(){var r=Math.max(14,Math.min(30,W*.02)),X=W*.07-px*5,Y=H*.17-sy*.02-py*3,g=x.createRadialGradient(X,Y,r*.9,X,Y,r*2.8);
+g.addColorStop(0,'rgba(150,180,255,.3)');g.addColorStop(1,'rgba(150,180,255,0)');x.fillStyle=g;x.beginPath();x.arc(X,Y,r*2.8,0,6.283);x.fill();
+g=x.createRadialGradient(X-r*.35,Y-r*.35,r*.1,X,Y,r);g.addColorStop(0,'#f4f7ff');g.addColorStop(.5,'#aebfe8');g.addColorStop(1,'#2a3266');x.fillStyle=g;x.beginPath();x.arc(X,Y,r,0,6.283);x.fill()}
+function frame(T){px+=(tx-px)*.05;py+=(ty-py)*.05;x.clearRect(0,0,W,H);
+S.forEach(function(s){var Y=((s.y-sy*s.z*.08-py*6*s.z)%H+H)%H,X=s.x-px*10*s.z,r=s.r,
+a=s.a*(rm?1:1-s.w*(.5+.5*Math.sin(T/s.p+s.ph))*(.55+.45*Math.sin(T/(s.p*2.3)+s.ph*1.7))),z;x.globalAlpha=a;
+if(s.b>.45){z=r*(s.b>.86?9:6.5);x.drawImage(spr(s.c),X-z,Y-z,2*z,2*z)}
+x.fillStyle='rgb('+(s.b>.6?'255,255,255':s.c)+')';
+if(r<1)x.fillRect(X-r/2,Y-r/2,r,r);else{x.beginPath();x.arc(X,Y,r*.6,0,6.283);x.fill()}
+if(s.sp){z=r*11;x.globalAlpha=a*.8;x.drawImage(spk(s.c),X-z,Y-z,2*z,2*z)}});
+x.globalAlpha=1;x.drawImage(pl,P.x-px*8-2.1*P.R,P.y-sy*.04-py*5-1.3*P.R,4.2*P.R,2.6*P.R);
+if(!mob){x.globalAlpha=.9;moon()}x.globalAlpha=1;
+if(!rm&&!lite&&T>nx){M.push({x:rn(.2,1)*W,y:rn(0,.45)*H,vx:-rn(7,11),vy:rn(3,5),l:0});nx=T+rn(2500,6500)}
+M=M.filter(function(m){m.x+=m.vx;m.y+=m.vy;if(++m.l>60)return false;var a=Math.sin(m.l/60*Math.PI),e=m.x-m.vx*12,f=m.y-m.vy*12,g=x.createLinearGradient(m.x,m.y,e,f);
+g.addColorStop(0,'rgba(255,255,255,'+a+')');g.addColorStop(1,'rgba(255,255,255,0)');x.strokeStyle=g;x.lineWidth=1.6;x.beginPath();x.moveTo(m.x,m.y);x.lineTo(e,f);x.stroke();x.fillStyle='rgba(255,255,255,'+a+')';x.beginPath();x.arc(m.x,m.y,1.5,0,6.283);x.fill();return true})}
+function size(){mob=innerWidth<720;k=Math.min(devicePixelRatio||1,lite?1:mob?1.3:1.6);W=innerWidth;H=innerHeight;sy=scrollY;
+nb.width=c.width=Math.round(W*k);nb.height=c.height=Math.round(H*k);x.setTransform(k,0,0,k,0,0);S=[];
+for(var i=0,n=Math.floor(Math.min(mob?90:300,Math.floor(W*H/(mob?5200:5600)))*(lite?.4:1)),b,z;i<n;i++){b=Math.pow(Math.random(),2.6);z=.2+b*.8;S.push({x:rn(0,W),y:rn(0,H),z:z,b:b,r:.45+b*1.5,a:.45+b*.55,p:rn(900,2600),ph:rn(0,6.3),w:rn(.18,.6),c:star(),sp:b>.86})}
+P.R=Math.max(110,Math.min(330,Math.min(W,H)*(mob?.5:.36)));P.x=W-P.R*(mob?.12:.4);P.y=H-P.R*(mob?.05:.1);
+nebula();planet();if(rm)frame(0)}
+var lf=0,lc=0,lite=0,done=0,fr=0,f0=0,ck2=0;
+if(navigator.connection&&navigator.connection.saveData||navigator.deviceMemory<=2){lite=1;R.classList.add('lite')}
+d.addEventListener('visibilitychange',function(){f0=0;fr=0});
+function loop(T){if(mob&&T-lf<30){requestAnimationFrame(loop);return}lf=T;var u=(T%13000)/13000,v=u<.5?u*2:2-u*2;if(T-lc>(lite?90:32)){lc=T;R.style.setProperty('--t',(v*v*(3-2*v)).toFixed(3))}
+if(!lite&&!done&&T>2500){if(!f0)f0=T;else{fr++;if(T-f0>2500){if(fr*1000/(T-f0)<(mob?24:40)){lite=1;R.classList.add('lite');size()}fr=0;f0=T;if(++ck2>3)done=1}}}
+frame(T);requestAnimationFrame(loop)}
+if(!rm){addEventListener('scroll',function(){sy=scrollY},{passive:true});addEventListener('pointermove',function(e){if(e.pointerType!=='touch'){tx=e.clientX/W-.5;ty=e.clientY/H-.5}})}
+addEventListener('resize',function(){clearTimeout(rt);rt=setTimeout(function(){if(innerWidth!==W||Math.abs(innerHeight-H)>150)size()},200)});
+size();if(!rm)requestAnimationFrame(loop);
+})();
+</script>
+</body>
+</html>
